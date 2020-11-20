@@ -1,6 +1,7 @@
 Simple command parser for Arduino
+cloned from: https://github.com/arttupii/ArduinoCommands
 
-See example project: https://github.com/arttupii/EspNowUsb
+See example project: [TODO]
 
 #### Features:
  - Max length of the parameter: 15byte
