@@ -6,6 +6,8 @@
 
 #include <Stream.h>
 #include <math.h>
+#include <safememcpy.h>
+
 
 class Commands {
   public:
@@ -27,8 +29,8 @@ class Commands {
     static unsigned long long sTolUint(const char*p) {
       unsigned long long d=0;
       int l=strlen(p);
-      for(int i=strlen(p)-1;i>=0;i--) {
-          d+=pow(10,l-i-1)*(p[i]-'0');
+      for(int i=strlen(p)-1; i>=0; i--) {
+          d += pow(10,l-i-1)*(p[i]-'0');
       }
       return d;
     }
